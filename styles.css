@@ -1,0 +1,317 @@
+body {
+    background-image: url('lily-banse--YHSwy6uqvk-unsplash.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover; /* Ensures the image covers the entire screen */
+    background-position: center; /* Centers the image */
+    margin: 0;
+}
+
+body.light-theme {
+    background-image: url('/wikisleep-app-qvIrI4ueqzY-unsplash.jpg');
+    background-size: cover; /* Apply the same style for light theme */
+    background-position: center;
+    color: rgb(0, 0, 0);
+}
+header {
+    width: 100%;
+    position: center;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.title-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.title {
+    color: rgb(0, 0, 0);
+    margin: 0;
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.title-gif {
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+.cont-menu-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.menu-container {
+    position: fixed;
+    top: 20px;
+    right: 150px;
+    z-index: 1000;
+}
+
+.cont-menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.nav-button {
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+    text-decoration: none;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-button:hover {
+    background-color: white;
+    color: black;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 30px;
+    right: 0;
+    background-color: rgba(132, 143, 240, 0.9);
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1001;
+    width: 120px;
+}
+
+.dropdown-menu a {
+    display: block;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dropdown-menu a:hover {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+.login-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(132, 143, 240, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    display: none;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.login-form label {
+    color: white;
+}
+
+.login-form input {
+    padding: 8px;
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: transparent;
+    color: white;
+}
+
+.login-form input::placeholder {
+    color: white;
+}
+
+.button-send button {
+    padding: 10px;
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.button-send button:hover {
+    background-color: white;
+    color: black;
+}
+
+.header-content {
+    text-align: center;
+    margin-top: 150px;
+    color: white;
+}
+
+.header-content h2 {
+    font-size: 40px;
+    color: aqua;
+    font-weight: 400;
+}
+
+.header-content p {
+    font-size: 20px;
+    color: white;
+}
+
+.header-content button {
+    padding: 10px 20px;
+    background-color: transparent;
+    color: aqua;
+    border: 2px solid aqua;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.header-content button:hover {
+    background-color: aqua;
+    color: white;
+}
+
+#menuDropdown {
+    width: 120px;
+}
+
+#menuDropdown a {
+    display: block;
+    color: rgb(3, 3, 3);
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#menuDropdown a:hover {
+    background-color: white;
+    color: rgb(0, 0, 0);
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    transition: transform 0.3s; /* Smooth transition for zoom */
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+
+.card:hover {
+    transform: scale(1.2); /* Zoom effect */
+}
+
+.card h2 {
+    margin: 0;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+}
+
+.card p {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer.light-theme {
+    background-image: url('wikisleep-app-qvIrI4ueqzY-unsplash.jpg');
+    ;
+}

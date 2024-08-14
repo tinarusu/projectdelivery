@@ -1,0 +1,143 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('wikisleep-app-qvIrI4ueqzY-unsplash.jpg'); /* Ensure the path to the image is correct */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: center;
+    z-index: 1000;
+}
+
+.title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.title {
+    font-size: 2.5rem;
+    color: #000;
+}
+
+.title-gif {
+    width: 50px;
+    height: 50px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: calc(100vh - 120px); /* Adjust height to account for header */
+    margin-top: 80px; /* Ensure space for fixed header */
+}
+
+.contact-form {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #000;
+}
+
+.contact-form input {
+    width: 100%;
+    height: 35px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 2px solid rgb(155, 0, 0);
+    padding: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.contact-form input:focus {
+    transform: scale(1.05);
+}
+
+.button-send {
+    display: flex;
+    justify-content: center;
+}
+
+.button-send button {
+    width: 200px;
+    height: 40px;
+    border: none;
+    border-radius: 30px;
+    margin-top: 10px;
+    background-color: white;
+    color: rgb(0, 0, 0);
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    font-weight: bold;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.button-send button:hover {
+    background-color: rgba(239, 25, 221, 0.3);
+    color: rgb(5, 5, 5);
+    transform: scale(1.05);
+}
+
+.popup {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    z-index: 1001;
+    width: 80%;
+    max-width: 600px;
+}
+
+.popup p {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+.map {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 15px;
+    background-color: #ccc; /* Placeholder for the map */
+}
+
+#closePopup {
+    padding: 10px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

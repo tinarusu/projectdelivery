@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('wikisleep-app-qvIrI4ueqzY-unsplash.jpg'); /* Ensure the path to the image is correct */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+header {
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1); /* Make the header background semi-transparent */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    position: fixed; /* Keep the header fixed at the top */
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.title {
+    font-size: 2.5rem;
+    color: #000;
+    margin: 0;
+}
+
+.title-gif {
+    width: 50px;
+    height: 50px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: calc(100vh - 120px); /* Adjust the height to accommodate for the header */
+    margin-top: 80px; /* Ensure space for the fixed header */
+}
+
+.container-form {
+    background-color: rgba(255, 255, 255, 0.3); /* Make the form background semi-transparent */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    max-width: 500px;
+    width: 100%;
+}
+
+.contact-details {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #000;
+    font-size: 18px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    color: #000;
+}
+
+.contact-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-form input {
+    width: 100%;
+    height: 35px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 2px solid rgb(155, 0, 0);
+    padding: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.contact-form input:focus {
+    transform: scale(1.05);
+}
+
+.contact-form input::placeholder {
+    font-family: Arial, sans-serif;
+}
+
+.button-send {
+    display: flex;
+    justify-content: center;
+}
+
+.button-send button {
+    width: 200px;
+    height: 40px;
+    border: none;
+    border-radius: 30px;
+    margin-top: 10px;
+    background-color: white;
+    color: rgb(0, 0, 0);
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    font-weight: bold;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.button-send button:hover {
+    background-color: rgba(239, 25, 221, 0.3);
+    color: rgb(5, 5, 5);
+    transform: scale(1.05);
+}
+
+.active-account {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+
+.active-account a {
+    color: blue;
+    text-decoration: none;
+    font-weight: bold;
+}

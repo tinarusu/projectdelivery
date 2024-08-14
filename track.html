@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Track Your Order - Yum Yum Food</title>
+</head>
+<body>
+    <header>
+        <div class="title-container">
+            <h1 class="title">Yum Yum Food <img src="source.gif" alt="delivery" id="titleGif" class="title-gif"></h1>
+        </div>
+    </header>
+
+    <div class="container">
+        <form class="contact-form" id="orderForm">
+            <label for="address">Address (in Romania)</label>
+            <input type="text" id="address" name="address" placeholder="Enter your address..." required />
+
+            <div class="button-send">
+                <button type="submit" id="submitButton">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <div id="popupBox" class="popup">
+        <p>Your order is on the way! Here's the current location:</p>
+        <div id="map" class="map"></div>
+        <button id="closePopup">Close</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

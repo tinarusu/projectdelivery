@@ -1,0 +1,30 @@
+{
+    "users": [
+      {
+        "id": "5589",
+        "firstName": "test1",
+        "lastName": "test2",
+        "email": "test@test.com",
+        "password": "parola"
+      },
+      {
+        "id": "563d",
+        "firstName": "test1",
+        "lastName": "test2",
+        "email": "test@test.com",
+        "password": "parola"
+      },
+      {
+        "id": "4d05",
+        "username": "testing",
+        "password": "password1"
+      },
+      {
+        "id": "cde5",
+        "firstName": "fehsh",
+        "lastName": "shshsr",
+        "email": "test@test.com",
+        "password": "parola"
+      }
+    ]
+  }
