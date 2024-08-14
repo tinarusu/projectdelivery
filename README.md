@@ -16,3 +16,6 @@ So far the website presents a variety of good looking images, interactive button
 
 -the website presents an easy login setup and also registration option for a normal account
 -the website requires a json server to be opened and the integration of POSTMAN 
+
+
+The testing was made on the switch buttons/ login window/ register and contact window. All buttons work and the user is capable of pressint/ inserting numbers and texts.
